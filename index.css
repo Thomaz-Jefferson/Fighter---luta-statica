@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+.fightarea{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(./img/fundo.gif);
+    background-size: cover;
+    background-position: bottom;
+   
+    
+
+}
+
+.lifebar{
+    
+    margin-top: 5px;
+    height: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.lifebar .bar{
+    
+    height: inherit;
+    background-color: red;
+    border-radius: 5px;
+}
+.spaceName{
+    margin-bottom: 4rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+.personagem img{
+    height: 21rem;
+    
+
+}
+.fightarea{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.log{
+    width: 20rem;
+    border: dotted #999;
+    height:90%;
+    overflow-y: scroll;
+    color: rgb(255, 255, 255);
+}
+.button{
+    
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.attackButton{
+    height: 2rem;
+    width: 5rem;
+    background-color: #ff0000;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.attackButton:hover{
+    background-color: #ac2828;
+    cursor: pointer;
+}
+@media ( max-width:850px){
+    .log{
+        
+        width: 30vw;
+        
+    }
+    .fightarea{
+        
+        width: 100vw;
+        height: 100vh;
+    }
+   #char .button{
+    position: absolute;
+    right: 70vw;
+    bottom: 40px;
+   }
+   #monster .button{
+    position: absolute;
+    right: 20vw;
+    bottom: 40px;
+   }
+    
+    .personagem img {
+       
+        
+        height: 14rem;
+          
+       
+    }
+    .spaceName{
+        font-size: 1rem;
+    }
+
+}
+
+@media ( max-width:480px){
+  
+    .fightarea{
+        
+        width: 100vw;
+        height: 100vh;
+    }
+   #char .button{
+    position: absolute;
+    right: 70vw;
+    bottom: 40px;
+   }
+   #monster .button{
+    position: absolute;
+    right: 20vw;
+    bottom: 40px;
+   }
+    
+    .personagem img {
+       
+        
+        height: 8rem;
+          
+       
+    }
+    .spaceName{
+        font-size: 1rem;
+    }
+
+}
